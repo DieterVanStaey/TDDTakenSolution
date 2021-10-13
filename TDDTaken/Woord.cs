@@ -1,8 +1,5 @@
 ﻿using System;
-using System.Collections.Generic;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace TDDTaken
 {
@@ -17,10 +14,12 @@ namespace TDDTaken
 
         public bool IsPalindroom()
         {
-            char[] karakterReeks = OmTeZettenWoord.ToCharArray();
-            Array.Reverse(karakterReeks);
-            string omgekeerd = new string(karakterReeks);
-            return OmTeZettenWoord == omgekeerd;
+            //min oplossing is niet fout, gewoon langer :)
+            //char[] karakterReeks = OmTeZettenWoord.ToCharArray();
+            //Array.Reverse(karakterReeks);
+            //var omgekeerd = new string(karakterReeks);
+            //return OmTeZettenWoord == omgekeerd;
+            return OmTeZettenWoord == new string(OmTeZettenWoord.ToCharArray().Reverse().ToArray());
         }
     }
 }
